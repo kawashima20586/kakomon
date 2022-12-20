@@ -19,27 +19,27 @@ st.title('機械保全学科試験過去問')
 
 nendo = st.sidebar.selectbox(
     '何年度の問題を実施しますか？',
-    list(range(2014,2021)))
+    list(range(2014,2022)))
 
 SP_SHEET_KEY = '11cJmn4lggpvbI3G4XfLLru8YJVjWINTIFAeyehjfYo0'
 
 sh = gc.open_by_key(SP_SHEET_KEY)
 
-if nendo < 2015:
+if nendo == 2014:
     SP_SHEET = '2014'
-elif nendo < 2016:
+elif nendo == 2015:
    SP_SHEET = '2015'
-elif nendo < 2017:
+elif nendo == 2016:
    SP_SHEET = '2016'
-elif nendo < 2018:
+elif nendo == 2017:
    SP_SHEET = '2017'
-elif nendo < 2019:
+elif nendo == 2018:
    SP_SHEET = '2018'
-elif nendo < 2020:
+elif nendo == 2019:
    SP_SHEET = '2019'   
-elif nendo < 2021:
+elif nendo == 2020:
    SP_SHEET = '2020'
-elif nendo < 2022:
+elif nendo == 2021:
    SP_SHEET = '2021'
 
 worksheet = sh.worksheet(SP_SHEET)
