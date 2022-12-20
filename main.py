@@ -54,7 +54,7 @@ for j in range(50):
     for i in range(4):
         st.write(data[j+1][i+2])
 
-    expander = st.expander('★回答')
+    expander = st.expander('★答え')
     expander.write(data[j+1][6])
     expander.write(data[j+1][7])
 
